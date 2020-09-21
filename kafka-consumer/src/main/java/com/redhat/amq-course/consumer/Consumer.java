@@ -1,4 +1,4 @@
-package cz.scholz.kafka.quarkus.consumer;
+package com.redhat.amq-course.consumer;
 
 import io.smallrye.reactive.messaging.kafka.KafkaMessage;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
@@ -17,9 +17,4 @@ public class Consumer {
         log.info("Received message (topic: {}, partition: {}) with key {}: {}", msg.getTopic(), msg.getPartition(), msg.getKey(), msg.getPayload());
         return msg.ack();
     }
-
-    /*@Incoming("consumed")
-    public void consumeString(String msg) {
-        log.info("Received string: {}", msg);
-    }*/
 }

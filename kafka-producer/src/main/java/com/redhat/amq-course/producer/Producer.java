@@ -1,4 +1,4 @@
-package cz.scholz.kafka.quarkus.producer;
+package com.redhat.amq-course.producer;
 
 import io.quarkus.scheduler.Scheduled;
 import io.reactivex.Flowable;
